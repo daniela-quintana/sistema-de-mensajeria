@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <div class="container">
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        <aside>
+            <ul>
+                <li>
+                    <img src="assets/images/maria.jpg" alt="user icon" class="user-icon">
+                    <div class="user-state">
+                        <a href="#home">Maria</a>
+                        <span>Activa ahora</span>
+                    </div>
+                    <div class="user-options">
+                        <i class="fa-regular fa-message"></i>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </li>
+                <li class="new-chat-button"><button>Nuevo chat</button></li>
+                <li>
+                    <img src="assets/images/juanita.jpg" alt="user icon" class="users-icon">
+                    <div>
+                        <a href="#home" class="users-names">Juanita</a>
+                        <p class="users-messages">At vero eos et accusa</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/images/alberto.jpg" alt="user icon" class="users-icon">
+                    <div>
+                        <a href="#home" class="users-names">Alberto</a>
+                        <p class="users-messages">bianditis praesentium</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/images/ignacio.jpg" alt="user icon" class="users-icon">
+                    <div>
+                        <a href="#home" class="users-names">Ignacio</a>
+                        <p class="users-messages">officis debitis aut</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/images/cristian.jpg" alt="user icon" class="users-icon">
+                    <div>
+                        <a href="#home" class="users-names">Cristian</a>
+                        <p class="users-messages">Nam libero tempore</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/images/maria-jose.jpg" alt="user icon" class="users-icon">
+                    <div>
+                        <a href="#home" class="users-names">María José</a>
+                        <p class="users-messages">impedit quo minus id</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/images/gonzalo.jpg" alt="user icon" class="users-icon">
+                    <div>
+                        <a href="#home" class="users-names">Gonzalo</a>
+                        <p class="users-messages">At vero eos et accusa</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/images/juan-pablo.jpg" alt="user icon" class="users-icon">
+                    <div>
+                        <a href="#home" class="users-names">Juan Pablo</a>
+                        <p class="users-messages">necessitatibus saepe</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/images/magdalena.jpg" alt="user icon" class="users-icon">
+                    <div>
+                        <a href="#home" class="users-names">Magdalena</a>
+                        <p class="users-messages">ut et voluptates</p>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+
+        <main>
+            <img src="assets/images/hand.png" alt="manos con fondo morado" class="hands-image">
+            <h1>Comienza el Networking</h1>
+            <p>Presiona el botón <b>"Nuevo chat"</b> para comenzar crear nuevas</p>
+            <p>redes de contacto para tu empresa o emprendiemiento</p>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const aside = document.querySelector('aside');
+
+            menuToggle.addEventListener('click', function () {
+                aside.classList.toggle('active');
+            });
+
+            document.querySelectorAll('aside a').forEach(link => {
+                link.addEventListener('click', function () {
+                    if (window.innerWidth <= 768) {
+                        aside.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
