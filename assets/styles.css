@@ -101,6 +101,10 @@
      background-color: var(--soap);
  }
 
+  button:focus {
+     background-color: var(--gray);
+ }
+
  .user-icon {
      width: 15%;
      border-radius: 50%;
